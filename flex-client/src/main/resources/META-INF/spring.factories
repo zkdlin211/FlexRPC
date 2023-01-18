@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cliffe.flex.client.FlexClientAutoConfiguration, \
+com.cliffe.flex.client.FlexClientExecutorAutoConfiguration, \
+com.cliffe.flex.client.FlexClientBusinessExecutorAutoConfiguration
