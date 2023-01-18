@@ -147,7 +147,7 @@ flex:
 ```
 On the server side: TODO
 
-## Load Balance
+### Load Balance
 You can also configure the Load Balance strategy on Client side. Default is `random`.
 ```java
 @FlexRpc(lbStrategy="hash")
@@ -172,10 +172,10 @@ public class ExampleLoadBalanceSelector implements LoadBalanceSelector{
 ```
 
 
-## Proxy
+### Proxy
 Default support is CGlib.
 TODO
 
-## Protocol
+### Protocol
 Default support "FLEX" protocol.
 TODO: "HTTP" ...
