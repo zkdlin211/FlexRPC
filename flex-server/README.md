@@ -1,4 +1,4 @@
-# FlexRPC - A Springboot-based RPC Framework
+# FlexRPC - A Simple Springboot-based RPC Framework
 FlexRPC is an annotation-driven, high-performance RPC framework built on top of Springboot. It uses Zookeeper as a registry center and Netty as the underlying transport layer, providing both NIO and BIO options for sending RPC requests.
 
 ## Getting Started
@@ -50,7 +50,7 @@ flex:
     rpc-port: 28889
 ```
 ### Sample Usage
-Then on the provider side, add the `@RpcService` annotation to the services implementations you want to provide. 
+Then on the provider side, add the `@RpcService` annotation to the services implementations you want to provide.
 This will register the service in the Zookeeper registry, making it available for clients to access.
 
 ```java
@@ -147,7 +147,7 @@ flex:
 ```
 On the server side: TODO
 
-## Load Balance
+### Load Balance
 You can also configure the Load Balance strategy on Client side. Default is `random`.
 ```java
 @FlexRpc(lbStrategy="hash")
@@ -172,11 +172,11 @@ public class ExampleLoadBalanceSelector implements LoadBalanceSelector{
 ```
 
 
-## Proxy
+### Proxy
 Default support is CGlib.
 TODO
 
-## Protocol
-Default support "FLEX" protocol. 
+### Protocol
+Default support "FLEX" protocol.
 TODO: "HTTP" ...
 
