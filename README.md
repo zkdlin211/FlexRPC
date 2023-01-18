@@ -1,4 +1,4 @@
-# FlexRPC - A Springboot-based RPC Framework
+# FlexRPC - A Simple Springboot-based RPC Framework
 FlexRPC is an annotation-driven, high-performance RPC framework built on top of Springboot. It uses Zookeeper as a registry center and Netty as the underlying transport layer, providing both NIO and BIO options for sending RPC requests.
 
 ## Getting Started
