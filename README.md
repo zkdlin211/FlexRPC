@@ -50,7 +50,7 @@ flex:
     rpc-port: 28889
 ```
 ### Sample Usage
-Then on the provider side, add the @RpcService annotation to the services implementations you want to provide. 
+Then on the provider side, add the `@RpcService` annotation to the services implementations you want to provide. 
 This will register the service in the Zookeeper registry, making it available for clients to access.
 
 ```java
@@ -67,7 +67,7 @@ public class HelloService {
     }
 }
 ```
-On the client side, you can use the @FlexRpc annotation to inject a proxy for the remote service.
+On the client side, you can use the `@FlexRpc` annotation to inject a proxy for the remote service.
 ```java
 @FlexRpc
 private HelloService helloService;
@@ -81,8 +81,8 @@ FlexRPC also supports for nio type of rpc request. To enable this, configure on 
 ```java
 @FlexService
 public interface HelloService {
-
-	@NIO(nioHandler = HelloNioHandler.class)
+    
+    @NIO(nioHandler = HelloNioHandler.class)
     String sayHello(String name);
     
 }
