@@ -173,7 +173,7 @@ public class ExampleLoadBalanceSelector implements LoadBalanceSelector{
 
 
 ### Proxy
-Default support is CGlib.
+Default support is GClib.
 TODO
 
 ### Protocol
