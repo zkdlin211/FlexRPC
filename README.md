@@ -82,7 +82,7 @@ FlexRPC also supports for nio type of rpc request. To enable this, configure on 
 @FlexService
 public interface HelloService {
 
-	@NIO(nioHandler = HelloNioHandler.class)
+    @NIO(nioHandler = HelloNioHandler.class)
     String sayHello(String name);
     
 }
