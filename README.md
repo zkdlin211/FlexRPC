@@ -126,7 +126,7 @@ then define your class in configuration file:
 ```yml
 flex:
   client:
-    serialization-type=path.to.config.MySerialization
+    serialization-type: path.to.config.MySerialization
 ```
 ### ThreadPool
 On the Client side, you can configure threadPool based on your requirement.
